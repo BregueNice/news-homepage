@@ -2,7 +2,7 @@
     --branco: hsl(36, 100%, 99%);
     --azul: hsl(233, 8%, 79%);
     --azul-medio: hsl(236, 13%, 42%);
-    --azul-escuro: hsl(236, 13%, 42%);
+    --azul-escuro: hsl(240, 100%, 5%);
     --laranja: hsl(35, 77%, 62%);
     --vermelho: hsl(5, 85%, 63%);
 
@@ -31,16 +31,19 @@ header {
     grid-area: header;
     display: flex;
     justify-content: space-between;
+    width: auto;
+    padding-bottom: 20px;
 }
 
 header img {
-    width: 100px;
+    width: 50px;
 }
 
 ul {
     display: flex;
     list-style: none;
-    gap: 100px;
+    gap: 80px;
+    padding-right: 30px;
 }
 
 ul li a{
@@ -59,13 +62,14 @@ ul li a{
     'texto cont'
     'texto button';
     width: 700px;
+    height: 550px;
 }
 
 h1{
     grid-area: texto;
-    overflow-wrap: break-word;
-    font-size: 3.75rem;
+    font-size: 3.3rem;
     font-weight: 800;
+    padding-top: 10px;
 }
 
 .container-principal__news img{
@@ -75,8 +79,8 @@ h1{
 .container-principal__news p{
     grid-area: cont;
     color: var(--azul-medio);
-    padding-top: 2rem;
-    font-size: 17px;
+    padding-top: 1rem;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -95,11 +99,44 @@ h1{
 
 .container-aside {
     grid-area: aside;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 1rem;
+    padding-top: 1rem;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container-aside div h2{
+    color: var(--laranja);
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+
+.container-aside div a{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.container-aside div p{
+    color: var(--azul-medio);
 }
 
 .container-footer {
     grid-area: footer;
     display: flex;
+    width: 1100px;
+    height: auto;
+    gap: 25px;
+}
+
+.linha{
+    background-color: var(--azul-medio);
+    width: 280px;
+    height: 1px;
 }
 
 img {
@@ -110,4 +147,34 @@ img {
 .footer-news {
     display: flex;
     height: 100px;
+    width: 350px;
+    gap: 10px;
+}
+
+.footer-news div img{
+    width: 80px;
+}
+
+.texto-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+
+.texto-container a{
+    text-decoration: none;
+    color: var(--azul-escuro);
+    font-weight: 800;
+}
+
+.footer-numero{
+    color: var(--azul);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.footer-texto{
+    color: var(--azul-medio);
 }
