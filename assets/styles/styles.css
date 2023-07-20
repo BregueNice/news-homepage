@@ -70,6 +70,14 @@ ul li a:hover{
     height: 550px;
 }
 
+.img-mobile{
+    display: none;
+}
+
+.botao-menu{
+    display: none;
+}
+
 h1{
     grid-area: texto;
     font-size: 3.3rem;
