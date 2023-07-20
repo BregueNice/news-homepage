@@ -32,7 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: auto;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 header img {
@@ -42,13 +42,18 @@ header img {
 ul {
     display: flex;
     list-style: none;
-    gap: 80px;
+    gap: 50px;
     padding-right: 30px;
 }
 
 ul li a{
     text-decoration: none;
     color: var(--azul-medio);
+}
+
+ul li a:hover{
+    color: var(--laranja);
+    transition: 0.3s ease-in-out;
 }
 
 .container-principal {
@@ -97,6 +102,11 @@ h1{
     text-transform: uppercase;
 }
 
+.container-principal__news a:hover{
+    background-color: var(--azul-escuro);
+    transition: 0.4s ease-in-out;
+}
+
 .container-aside {
     grid-area: aside;
     background-color: var(--azul-escuro);
@@ -120,6 +130,12 @@ h1{
     text-decoration: none;
     color: var(--branco);
 }
+
+.noticia-aside:hover{
+    color: var(--laranja);
+    transition: 0.3s ease-in-out; 
+}
+
 
 .container-aside div p{
     color: var(--azul-medio);
@@ -167,6 +183,11 @@ img {
     text-decoration: none;
     color: var(--azul-escuro);
     font-weight: 800;
+}
+
+.texto-container a:hover{
+    color: var(--vermelho);
+    transition: 0.3s ease-in-out;
 }
 
 .footer-numero{
