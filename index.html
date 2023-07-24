@@ -19,19 +19,29 @@
         <header>
             <div class="imgs-header">
                 <img src="./assets/images/logo.svg" alt="">
-                <a href="#" class="botao-menu"><img src="./assets/images/icon-menu.svg" alt=""></a>
+                <a href="#" class="botao-menu" id="botao-nav" onclick="abrir()"><img src="./assets/images/icon-menu.svg" alt=""></a>
             </div>
             <nav>
 
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">New</a></li>
-                    <li><a href="">Popular</a></li>
-                    <li><a href="">Trending</a></li>
-                    <li><a href="">Categories</a></li>
+                <ul class="nav-desktop">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Categories</a></li>
                 </ul>
             </nav>
         </header>
+        <nav class="nav-mobile" id="nav-mob">
+            <a href="#"><img src="./assets/images/icon-menu-close.svg" alt="" onclick="abrir()"></a>
+            <ul class="nav-mobile__items">
+                <li><a href="">Home</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Popular</a></li>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Categories</a></li>
+            </ul>
+        </nav>
         <section class="container-principal">
             <div class="container-principal__news">
                 <img src="./assets/images/image-web-3-desktop.jpg" alt="" class="imagem">
@@ -111,6 +121,7 @@
             </div>
         </section>
     </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>
