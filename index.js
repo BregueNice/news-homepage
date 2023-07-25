@@ -3,7 +3,6 @@ let botaoNav = document.getElementById('botao-nav');
 let navM = document.getElementById('nav-mob');
 let sombra = document.getElementById('sombra');
 
-console.log(sombra);
 
 function abrir() {
     if (navM.style.visibility == "visible") {
