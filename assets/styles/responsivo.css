@@ -6,7 +6,6 @@
 
     body{
         font-family: var(--fonte);
-        display: flex;
         height: auto;
         width: auto;
     }
@@ -35,7 +34,7 @@
     }
 
     .nav-mobile{
-        visibility: hidden;
+        visibility: visible;
         position: absolute;
         top: 0;
         right: 0;
@@ -50,7 +49,9 @@
     .nav-mobile img{
         width: 30px;
         height: 30px;
-        padding-left: 190px;
+        position: absolute;
+        padding-right: 10px;
+        right: 0;
     }
 
     .nav-mobile__items{
